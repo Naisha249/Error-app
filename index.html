@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style data-merge-styles="true"></style>
+	<title>Automatic Attendance System With Face Recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+</head>
+<body background="Background.jpg">
+    <center>
+      <h2>Automatic Attendance System With Face Recognition</h2>
+        <style>
+            table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+            }
+            
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+            }
+            
+            tr:nth-child(even) {
+              background-color: whitesmoke;
+            }
+
+            tr:nth-child(odd) {
+              background-color: grey;
+            } 
+            </style>
+            
+            <h2>Class: 6I</h2>
+            <br>
+            <h2>Class Teacher: Sukanya </h2>
+            
+            <table>
+              <tr>
+                <th>Name</th>
+                <th>Roll.No</th>
+                <th>Attendance</th>
+              </tr>
+              <tr>
+                <td>Naisha</td>
+                <td>  1</td>
+                <td>Absent</td>
+              </tr>
+              <tr>
+                <td>Mishka</td>
+                <td>2</td>
+                <td>Absent</td>
+              </tr>
+              <tr>
+                <td>Selina</td>
+                <td>3</td>
+                <td>Absent</td>
+              </tr>
+            </table> 
+            
+            <label>Webcam View - </label>
+            
+            <div id ="camera"></div>
+             <br><br>
+             <div id ="result"></div>
+             <br><br>
+            <button onclick="take_snapshot();" class="btn btn-info">Capture Image</button>
+             <br><br>
+             <button onclick="check();" class="btn btn-success">identify Image</button>
+             <br><br>
+       
+             <p style="font-size: 22px;">Result : <span id="result"></span> </p>
+             
+    <script src="main.js"></script>
+</body>
+</html>
